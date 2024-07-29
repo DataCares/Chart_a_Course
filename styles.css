@@ -1,0 +1,74 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Livvic, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    overflow-y: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #005b8c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("resources/home-bckgrd.svg");
+}
+
+.blur-section {
+    filter: blur(5px);
+  }
+
+h1 {
+    font-family: "Coming Soon", sans-serif;
+    font-size: 10vh;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 15vh;
+    color: #fff;
+}
+
+h2 {
+    font-family: Livvic, sans-serif;
+    font-size: 4vh;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    margin: 0;   
+}
+
+.text-blur {
+    backdrop-filter: blur(1px);
+    margin:0;
+    padding:0;
+}
+
+div .white-section {
+    width: 100%;
+    height: 15rem;
+}
+
+/* Apply a blur effect to the background behind the text */
+.text-with-blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    font-size: 24px; /* Text size */
+    padding: 20px; /* Padding around the text */
+  }
+  
+  /* Ensure the element has a transparent background */
+  .text-container {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    width: max-content; /* Fit the width to the content */
+    margin: auto; /* Center the container */
+  }
+  
