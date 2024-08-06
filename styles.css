@@ -51,7 +51,7 @@ body, html {
     background-color: #0664A4;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("Chart_a_Course/home-bckgrd.svg");
+    background-image: url("/Chart_a_Course/home-bckgrd.svg");
     height: calc(100vh - 30px);
     display: flex;
     align-items: center;
