@@ -1,74 +1,129 @@
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: Livvic, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4;
-    overflow-y: hidden;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Livvic", sans-serif;
+    font-style: normal;
+    overflow: hidden;
 }
 
-header {
+.site-header {
+    background-color: #0664A4;
+    padding: 10px 0;
+    border-bottom: 1px solid #0664A4;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navigation .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    height: 100vh;
-    text-align: center;
-    background-color: #005b8c;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ECFAFD;
+    font-family: "Livvic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-header {
+    position: relative;
+    background-color: #0664A4;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("https://github.com/DataCares/Chart_a_Course/blob/f77e67abc1805491458ec9b0493f703f41dab374/resources/home-bckgrd.svg");
-}
-
-.blur-section {
-    filter: blur(5px);
-  }
-
-h1 {
-    font-family: "Coming Soon", sans-serif;
-    font-size: 10vh;
-    font-weight: 400;
-    font-style: normal;
+    background-image: url("home-bckgrd.svg");
+    height: calc(100vh - 30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: 15vh;
-    color: #fff;
+    flex-direction: column;
 }
 
-h2 {
-    font-family: Livvic, sans-serif;
-    font-size: 4vh;
-    font-weight: 400;
-    font-style: normal;
-    color: #fff;
-    text-align: center;
-    margin: 0;   
-}
 
-.text-blur {
+.header-content {
+    position: relative;
+    z-index: 1;
     backdrop-filter: blur(1px);
-    margin:0;
-    padding:0;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-div .white-section {
-    width: 100%;
-    height: 15rem;
+.header-content h1 {
+    font-size: 4em;
+    font-weight: 400;
+    color: #ECFAFD;
+    margin: 0;
 }
 
-/* Apply a blur effect to the background behind the text */
-.text-with-blur {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    font-size: 24px; /* Text size */
-    padding: 20px; /* Padding around the text */
-  }
-  
-  /* Ensure the element has a transparent background */
-  .text-container {
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
-    width: max-content; /* Fit the width to the content */
-    margin: auto; /* Center the container */
-  }
-  
+.header-content h2 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #ECFAFD;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 3em;
+    }
+
+    .header-content h2 {
+        font-size: 1.5em;
+    }
+
+    .navigation .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #ECFAFD;
+    }
+
+    .navigation .nav-links a {
+        padding: 10px 0;
+        text-align: center;
+        border-bottom: 1px solid #0664A4;
+    }
+
+    .navigation .menu-toggle {
+        display: flex;
+    }
+
+    .navigation.active .nav-links {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .header-content h2 {
+        font-size: 1.2em;
+    }
+}
+
