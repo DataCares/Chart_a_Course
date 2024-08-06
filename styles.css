@@ -44,6 +44,17 @@ body, html {
     font-family: "Livvic", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding: 5px 0;
+    flex: 1;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #05B1BF;
+  animation: loadingWave 4s linear;
 }
 
 .main-header {
@@ -51,7 +62,7 @@ body, html {
     background-color: #0664A4;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("/Chart_a_Course/home-bckgrd.svg");
+    background-image: url("home-bckgrd.svg");
     height: calc(100vh - 30px);
     display: flex;
     align-items: center;
