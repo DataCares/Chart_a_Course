@@ -17,6 +17,7 @@ body, html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .navigation .menu-toggle {
@@ -93,7 +94,7 @@ body, html {
     color: #ECFAFD;
     margin-top: 10px;
 }
-
+/*
 @media (max-width: 768px) {
     .header-content h1 {
         font-size: 3em;
@@ -108,9 +109,10 @@ body, html {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 100%;
         left: 0;
         background-color: #ECFAFD;
+        background-color: #0664A4; 
     }
 
     .navigation .nav-links a {
@@ -127,7 +129,7 @@ body, html {
         display: flex;
     }
 }
-
+*/
 @media (max-width: 480px) {
     .header-content h1 {
         font-size: 2em;
